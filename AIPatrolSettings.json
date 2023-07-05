@@ -1,0 +1,770 @@
+{
+    "m_Version": 15,
+    "Enabled": 1,
+    "DespawnTime": 600.0,
+    "RespawnTime": -1.0,
+    "MinDistRadius": 400.0,
+    "MaxDistRadius": 1000.0,
+    "DespawnRadius": 1100.0,
+    "AccuracyMin": -1.0,
+    "AccuracyMax": -1.0,
+    "ThreatDistanceLimit": -1.0,
+    "DamageMultiplier": -1.0,
+    "ObjectPatrols": [
+        {
+            "Name": "",
+            "Faction": "Mercenaries",
+            "Formation": "File",
+            "FormationLooseness": 0.0,
+            "LoadoutFile": "MilitaryLoadout",
+            "NumberOfAI": 12,
+            "Behaviour": "ALTERNATE",
+            "Speed": "WALK",
+            "UnderThreatSpeed": "JOG",
+            "CanBeLooted": 1,
+            "UnlimitedReload": 0,
+            "SniperProneDistanceThreshold": 0.0,
+            "AccuracyMin": -1.0,
+            "AccuracyMax": -1.0,
+            "ThreatDistanceLimit": -1.0,
+            "DamageMultiplier": -1.0,
+            "MinDistRadius": -2.0,
+            "MaxDistRadius": -2.0,
+            "DespawnRadius": -2.200000047683716,
+            "MinSpreadRadius": 5.0,
+            "MaxSpreadRadius": 20.0,
+            "Chance": 1.0,
+            "WaypointInterpolation": "",
+            "DespawnTime": -1.0,
+            "RespawnTime": -2.0,
+            "ClassName": "Wreck_UH1Y"
+        },
+        {
+            "Name": "",
+            "Faction": "Mercenaries",
+            "Formation": "File",
+            "FormationLooseness": 0.0,
+            "LoadoutFile": "MilitaryLoadout",
+            "NumberOfAI": 12,
+            "Behaviour": "ALTERNATE",
+            "Speed": "WALK",
+            "UnderThreatSpeed": "JOG",
+            "CanBeLooted": 1,
+            "UnlimitedReload": 0,
+            "SniperProneDistanceThreshold": 0.0,
+            "AccuracyMin": -1.0,
+            "AccuracyMax": -1.0,
+            "ThreatDistanceLimit": -1.0,
+            "DamageMultiplier": -1.0,
+            "MinDistRadius": -2.0,
+            "MaxDistRadius": -2.0,
+            "DespawnRadius": -2.200000047683716,
+            "MinSpreadRadius": 5.0,
+            "MaxSpreadRadius": 20.0,
+            "Chance": 1.0,
+            "WaypointInterpolation": "",
+            "DespawnTime": -1.0,
+            "RespawnTime": -2.0,
+            "ClassName": "Wreck_Mi8_Crashed"
+        },
+        {
+            "Name": "",
+            "Faction": "Guards",
+            "Formation": "File",
+            "FormationLooseness": 0.0,
+            "LoadoutFile": "PoliceLoadout",
+            "NumberOfAI": 6,
+            "Behaviour": "ALTERNATE",
+            "Speed": "WALK",
+            "UnderThreatSpeed": "SPRINT",
+            "CanBeLooted": 1,
+            "UnlimitedReload": 0,
+            "SniperProneDistanceThreshold": 0.0,
+            "AccuracyMin": -1.0,
+            "AccuracyMax": -1.0,
+            "ThreatDistanceLimit": -1.0,
+            "DamageMultiplier": -1.0,
+            "MinDistRadius": -2.0,
+            "MaxDistRadius": -2.0,
+            "DespawnRadius": -2.200000047683716,
+            "MinSpreadRadius": 5.0,
+            "MaxSpreadRadius": 20.0,
+            "Chance": 1.0,
+            "WaypointInterpolation": "",
+            "DespawnTime": -1.0,
+            "RespawnTime": -2.0,
+            "ClassName": "Land_Wreck_sed01_aban1_police"
+        },
+        {
+            "Name": "",
+            "Faction": "Guards",
+            "Formation": "File",
+            "FormationLooseness": 0.0,
+            "LoadoutFile": "PoliceLoadout",
+            "NumberOfAI": 6,
+            "Behaviour": "ALTERNATE",
+            "Speed": "WALK",
+            "UnderThreatSpeed": "SPRINT",
+            "CanBeLooted": 1,
+            "UnlimitedReload": 0,
+            "SniperProneDistanceThreshold": 0.0,
+            "AccuracyMin": -1.0,
+            "AccuracyMax": -1.0,
+            "ThreatDistanceLimit": -1.0,
+            "DamageMultiplier": -1.0,
+            "MinDistRadius": -2.0,
+            "MaxDistRadius": -2.0,
+            "DespawnRadius": -2.200000047683716,
+            "MinSpreadRadius": 5.0,
+            "MaxSpreadRadius": 20.0,
+            "Chance": 1.0,
+            "WaypointInterpolation": "",
+            "DespawnTime": -1.0,
+            "RespawnTime": -2.0,
+            "ClassName": "Land_Wreck_sed01_aban2_police"
+        },
+        {
+            "Name": "",
+            "Faction": "Mercenaries",
+            "Formation": "File",
+            "FormationLooseness": 0.0,
+            "LoadoutFile": "NBCLoadout",
+            "NumberOfAI": 6,
+            "Behaviour": "ALTERNATE",
+            "Speed": "JOG",
+            "UnderThreatSpeed": "JOG",
+            "CanBeLooted": 1,
+            "UnlimitedReload": 0,
+            "SniperProneDistanceThreshold": 0.0,
+            "AccuracyMin": -1.0,
+            "AccuracyMax": -1.0,
+            "ThreatDistanceLimit": -1.0,
+            "DamageMultiplier": -1.0,
+            "MinDistRadius": -2.0,
+            "MaxDistRadius": -2.0,
+            "DespawnRadius": -2.200000047683716,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 150.0,
+            "Chance": 1.0,
+            "WaypointInterpolation": "",
+            "DespawnTime": -1.0,
+            "RespawnTime": -2.0,
+            "ClassName": "ContaminatedArea_Static"
+        },
+        {
+            "Name": "",
+            "Faction": "Mercenaries",
+            "Formation": "File",
+            "FormationLooseness": 0.0,
+            "LoadoutFile": "NBCLoadout",
+            "NumberOfAI": 6,
+            "Behaviour": "ALTERNATE",
+            "Speed": "JOG",
+            "UnderThreatSpeed": "JOG",
+            "CanBeLooted": 1,
+            "UnlimitedReload": 0,
+            "SniperProneDistanceThreshold": 0.0,
+            "AccuracyMin": -1.0,
+            "AccuracyMax": -1.0,
+            "ThreatDistanceLimit": -1.0,
+            "DamageMultiplier": -1.0,
+            "MinDistRadius": -2.0,
+            "MaxDistRadius": -2.0,
+            "DespawnRadius": -2.200000047683716,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 150.0,
+            "Chance": 1.0,
+            "WaypointInterpolation": "",
+            "DespawnTime": -1.0,
+            "RespawnTime": -2.0,
+            "ClassName": "ContaminatedArea_Dynamic"
+        }
+    ],
+    "Patrols": [
+        {
+            "Name": "NWAF_Tents",
+            "Faction": "Mercenaries",
+            "Formation": "File",
+            "FormationLooseness": 0.0,
+            "LoadoutFile": "MilitaryLoadout",
+            "NumberOfAI": 4,
+            "Behaviour": "ALTERNATE",
+            "Speed": "WALK",
+            "UnderThreatSpeed": "JOG",
+            "CanBeLooted": 1,
+            "UnlimitedReload": 0,
+            "SniperProneDistanceThreshold": 0.0,
+            "AccuracyMin": -1.0,
+            "AccuracyMax": -1.0,
+            "ThreatDistanceLimit": -1.0,
+            "DamageMultiplier": -1.0,
+            "MinDistRadius": -2.0,
+            "MaxDistRadius": -2.0,
+            "DespawnRadius": -2.200000047683716,
+            "MinSpreadRadius": 1.0,
+            "MaxSpreadRadius": 100.0,
+            "Chance": 1.0,
+            "WaypointInterpolation": "CatmullRom",
+            "DespawnTime": -1.0,
+            "RespawnTime": -2.0,
+            "UseRandomWaypointAsStartPoint": 0,
+            "Waypoints": [
+                [
+                    2436.1,
+                    338.442,
+                    10989.1
+                ],
+                [
+                    4185.82,
+                    338.51,
+                    11034.7
+                ],
+                [
+                    4175.24,
+                    338.51,
+                    11052.3
+                ],
+                [
+                    4146.25,
+                    338.51,
+                    11048.7
+                ],
+                [
+                    4141.27,
+                    338.51,
+                    11068.4
+                ],
+                [
+                    4164.4,
+                    338.51,
+                    11078.9
+                ],
+                [
+                    4175.41,
+                    338.51,
+                    11095.4
+                ],
+                [
+                    4220.76,
+                    338.51,
+                    11093.8
+                ],
+                [
+                    4235.65,
+                    338.51,
+                    11042.2
+                ]
+            ]
+        },
+        {
+            "Name": "NWAF_East_Patrol",
+            "Faction": "Mercenaries",
+            "Formation": "File",
+            "FormationLooseness": 0.0,
+            "LoadoutFile": "MilitaryLoadout",
+            "NumberOfAI": 4,
+            "Behaviour": "LOOP",
+            "Speed": "WALK",
+            "UnderThreatSpeed": "JOG",
+            "CanBeLooted": 1,
+            "UnlimitedReload": 0,
+            "SniperProneDistanceThreshold": 0.0,
+            "AccuracyMin": -1.0,
+            "AccuracyMax": -1.0,
+            "ThreatDistanceLimit": -1.0,
+            "DamageMultiplier": -1.0,
+            "MinDistRadius": -2.0,
+            "MaxDistRadius": -2.0,
+            "DespawnRadius": -2.200000047683716,
+            "MinSpreadRadius": 1.0,
+            "MaxSpreadRadius": 100.0,
+            "Chance": 1.0,
+            "WaypointInterpolation": "CatmullRom",
+            "DespawnTime": -1.0,
+            "RespawnTime": -2.0,
+            "UseRandomWaypointAsStartPoint": 0,
+            "Waypoints": [
+                [
+                    4959.87,
+                    333.992,
+                    10416
+                ],
+                [
+                    4892.5,
+                    335.983,
+                    10548.2
+                ],
+                [
+                    4881.71,
+                    334.751,
+                    10600.2
+                ],
+                [
+                    4844.11,
+                    335.93,
+                    10664.6
+                ],
+                [
+                    4808.55,
+                    339.392,
+                    10687.9
+                ],
+                [
+                    4712.6,
+                    339.076,
+                    10650.6
+                ],
+                [
+                    4641.51,
+                    338.918,
+                    10753.4
+                ],
+                [
+                    4595.86,
+                    338.867,
+                    10771.9
+                ],
+                [
+                    4584.04,
+                    338.474,
+                    10909.8
+                ],
+                [
+                    4510.52,
+                    338.938,
+                    10861.2
+                ],
+                [
+                    4421.43,
+                    338.999,
+                    10779.9
+                ],
+                [
+                    4488.98,
+                    339.1,
+                    10657.9
+                ],
+                [
+                    4588.34,
+                    339.1,
+                    10713.5
+                ],
+                [
+                    4488.98,
+                    339.1,
+                    10657.9
+                ],
+                [
+                    4524.98,
+                    339.1,
+                    10613.8
+                ],
+                [
+                    4697.23,
+                    339.25,
+                    10561.1
+                ],
+                [
+                    4925.85,
+                    334.091,
+                    10434.4
+                ]
+            ]
+        },
+        {
+            "Name": "NWAF_South_Patrol",
+            "Faction": "Mercenaries",
+            "Formation": "File",
+            "FormationLooseness": 0.0,
+            "LoadoutFile": "MilitaryLoadout",
+            "NumberOfAI": 4,
+            "Behaviour": "ALTERNATE",
+            "Speed": "WALK",
+            "UnderThreatSpeed": "JOG",
+            "CanBeLooted": 1,
+            "UnlimitedReload": 0,
+            "SniperProneDistanceThreshold": 0.0,
+            "AccuracyMin": -1.0,
+            "AccuracyMax": -1.0,
+            "ThreatDistanceLimit": -1.0,
+            "DamageMultiplier": -1.0,
+            "MinDistRadius": -2.0,
+            "MaxDistRadius": -2.0,
+            "DespawnRadius": -2.200000047683716,
+            "MinSpreadRadius": 1.0,
+            "MaxSpreadRadius": 100.0,
+            "Chance": 1.0,
+            "WaypointInterpolation": "CatmullRom",
+            "DespawnTime": -1.0,
+            "RespawnTime": -2.0,
+            "UseRandomWaypointAsStartPoint": 0,
+            "Waypoints": [
+                [
+                    5340.77,
+                    377.599,
+                    9756.52
+                ],
+                [
+                    5063.93,
+                    339.1,
+                    9760.33
+                ],
+                [
+                    4772.36,
+                    339.053,
+                    9589.42
+                ],
+                [
+                    4582.49,
+                    339.1,
+                    9581.23
+                ],
+                [
+                    4468.85,
+                    339.1,
+                    9582.88
+                ],
+                [
+                    4422.75,
+                    339.1,
+                    9613.85
+                ],
+                [
+                    4457.91,
+                    339.1,
+                    9661.48
+                ],
+                [
+                    4581.93,
+                    339.1,
+                    9660.99
+                ],
+                [
+                    4564.98,
+                    339.18,
+                    9443.91
+                ],
+                [
+                    4507.66,
+                    339.045,
+                    9396.57
+                ]
+            ]
+        },
+        {
+            "Name": "NWAF_West_Patrol",
+            "Faction": "Mercenaries",
+            "Formation": "File",
+            "FormationLooseness": 0.0,
+            "LoadoutFile": "MilitaryLoadout",
+            "NumberOfAI": 4,
+            "Behaviour": "LOOP",
+            "Speed": "WALK",
+            "UnderThreatSpeed": "JOG",
+            "CanBeLooted": 1,
+            "UnlimitedReload": 0,
+            "SniperProneDistanceThreshold": 0.0,
+            "AccuracyMin": -1.0,
+            "AccuracyMax": -1.0,
+            "ThreatDistanceLimit": -1.0,
+            "DamageMultiplier": -1.0,
+            "MinDistRadius": -2.0,
+            "MaxDistRadius": -2.0,
+            "DespawnRadius": -2.200000047683716,
+            "MinSpreadRadius": 1.0,
+            "MaxSpreadRadius": 100.0,
+            "Chance": 1.0,
+            "WaypointInterpolation": "CatmullRom",
+            "DespawnTime": -1.0,
+            "RespawnTime": -2.0,
+            "UseRandomWaypointAsStartPoint": 0,
+            "Waypoints": [
+                [
+                    3915.53,
+                    333.124,
+                    10703.4
+                ],
+                [
+                    3967.92,
+                    339.1,
+                    10632.6
+                ],
+                [
+                    4032.19,
+                    339.313,
+                    10486.6
+                ],
+                [
+                    4227.59,
+                    339.1,
+                    10327.2
+                ],
+                [
+                    4314.34,
+                    339.1,
+                    10196.9
+                ],
+                [
+                    4396.48,
+                    339.1,
+                    10253.9
+                ],
+                [
+                    4125.3,
+                    339.1,
+                    10721.6
+                ],
+                [
+                    3964.21,
+                    339.101,
+                    10634.2
+                ],
+				[
+                    3915.53,
+                    333.124,
+                    10703.4
+                ]
+            ]
+        },
+        {
+            "Name": "NWAF_North_Upper_Patrol",
+            "Faction": "Mercenaries",
+            "Formation": "File",
+            "FormationLooseness": 0.0,
+            "LoadoutFile": "MilitaryLoadout",
+            "NumberOfAI": 6,
+            "Behaviour": "ALTERNATE",
+            "Speed": "WALK",
+            "UnderThreatSpeed": "JOG",
+            "CanBeLooted": 1,
+            "UnlimitedReload": 0,
+            "SniperProneDistanceThreshold": 0.0,
+            "AccuracyMin": -1.0,
+            "AccuracyMax": -1.0,
+            "ThreatDistanceLimit": -1.0,
+            "DamageMultiplier": -1.0,
+            "MinDistRadius": -2.0,
+            "MaxDistRadius": -2.0,
+            "DespawnRadius": -2.200000047683716,
+            "MinSpreadRadius": 1.0,
+            "MaxSpreadRadius": 100.0,
+            "Chance": 1.0,
+            "WaypointInterpolation": "CatmullRom",
+            "DespawnTime": -1.0,
+            "RespawnTime": -2.0,
+            "UseRandomWaypointAsStartPoint": 0,
+            "Waypoints": [
+                [
+                    4157.17,
+                    384.137,
+                    11750.6
+                ],
+                [
+                    4126.22,
+                    380.557,
+                    11727.8
+                ],
+                [
+                    4119.36,
+                    379.65,
+                    11706.4
+                ],
+                [
+                    4056.27,
+                    379.477,
+                    11765.6
+                ],
+                [
+                    4018.18,
+                    376.097,
+                    11742.4
+                ],
+                [
+                    4035.95,
+                    376.04,
+                    11707.7
+                ],
+                [
+                    4018.18,
+                    376.097,
+                    11742.4
+                ],
+                [
+                    4001.5,
+                    375.83,
+                    11787.9
+                ],
+                [
+                    4008.26,
+                    375.644,
+                    11870.5
+                ],
+                [
+                    4031.04,
+                    375.683,
+                    11851.9
+                ],
+                [
+                    4001.4,
+                    375.765,
+                    11833.1
+                ],
+                [
+                    4004.81,
+                    375.876,
+                    11764.6
+                ],
+                [
+                    4015.6,
+                    376.162,
+                    11743.6
+                ],
+                [
+                    3969.64,
+                    369.321,
+                    11716.9
+                ],
+                [
+                    3997.2,
+                    369.34,
+                    11675.2
+                ],
+                [
+                    4108.64,
+                    370.503,
+                    11627.3
+                ],
+                [
+                    4062.39,
+                    369.915,
+                    11608.9
+                ],
+                [
+                    4017.35,
+                    369.9,
+                    11626.4
+                ],
+                [
+                    4014.55,
+                    369.838,
+                    11645.2
+                ],
+                [
+                    3990.51,
+                    369.34,
+                    11667.6
+                ],
+                [
+                    3990.22,
+                    369.344,
+                    11687.4
+                ],
+                [
+                    3971.4,
+                    369.312,
+                    11717.4
+                ],
+                [
+                    4056.16,
+                    379.475,
+                    11764.2
+                ],
+                [
+                    4095.89,
+                    379.61,
+                    11714.9
+                ],
+                [
+                    4115.41,
+                    379.639,
+                    11709.6
+                ],
+                [
+                    4148.85,
+                    383.72,
+                    11746.3
+                ]
+            ]
+        },
+        {
+            "Name": "NWAF_East_Bunkers_Patrol",
+            "Faction": "Mercenaries",
+            "Formation": "File",
+            "FormationLooseness": 0.0,
+            "LoadoutFile": "MilitaryLoadout",
+            "NumberOfAI": 4,
+            "Behaviour": "ALTERNATE",
+            "Speed": "WALK",
+            "UnderThreatSpeed": "JOG",
+            "CanBeLooted": 1,
+            "UnlimitedReload": 0,
+            "SniperProneDistanceThreshold": 0.0,
+            "AccuracyMin": -1.0,
+            "AccuracyMax": -1.0,
+            "ThreatDistanceLimit": -1.0,
+            "DamageMultiplier": -1.0,
+            "MinDistRadius": -2.0,
+            "MaxDistRadius": -2.0,
+            "DespawnRadius": -2.200000047683716,
+            "MinSpreadRadius": 1.0,
+            "MaxSpreadRadius": 100.0,
+            "Chance": 1.0,
+            "WaypointInterpolation": "CatmullRom",
+            "DespawnTime": -1.0,
+            "RespawnTime": -2.0,
+            "UseRandomWaypointAsStartPoint": 0,
+            "Waypoints": [
+                [
+                    4875.74,
+                    339.5,
+                    9778.44
+                ],
+                [
+                    4841.9,
+                    339.101,
+                    9924.53
+                ],
+                [
+                    4976.34,
+                    339.101,
+                    10005.8
+                ],
+                [
+                    4841.9,
+                    339.101,
+                    9924.53
+                ],
+                [
+                    4750.19,
+                    339.1,
+                    10088.7
+                ],
+                [
+                    4902.68,
+                    339.099,
+                    10173.5
+                ],
+                [
+                    4914.53,
+                    339.09,
+                    10217.7
+                ],
+                [
+                    4844.7,
+                    339.024,
+                    10341
+                ],
+                [
+                    4667.18,
+                    339.1,
+                    10229.9
+                ],
+                [
+                    4920.13,
+                    339.1,
+                    9769.99
+                ]
+            ]
+        }
+    ]
+}
