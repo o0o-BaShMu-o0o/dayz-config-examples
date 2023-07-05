@@ -10,4 +10,4 @@ If you, like me, have found it difficult to find the information you need, feel 
 ToDo;
 
 (1) Create a directory structure to place files in so configuration files that work together are grouped together.
-(2) Create a readme in each directory with an explanation of how files link together and where their directory path locations on the server. As well as resources for easier configuration.
+(2) Create a readme in each directory with an explanation of how files link together and where their directory path locations are on the server. As well as provide resources for easier further configuration.
