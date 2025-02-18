@@ -2,8 +2,12 @@
 
 # The beginning of a Linux DayZ Server startup script
 
-# Debug running script as user
-#echo "Script is running as user: $(whoami)"
+# Color ANSI escape codes
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m'  # No Color (reset)
 
 # Configuration
 STEAMCMD_PATH="$HOME/DayZ/DayZServers/Steamcmd/steamcmd.sh"
@@ -20,23 +24,77 @@ BATTLEYE_PATH="$SERVER_DIR/battleye"
 PROFILES_PATH="$SERVER_DIR/profiles"
 SERVER_EXECUTABLE="$SERVER_DIR/DayZServer"
 
+echo -e "${BLUE}*******************************************${NC}"
+echo -e "${BLUE}**${NC} DayZ Server Script 0.1 Beta             "
+echo -e "${BLUE}*******************************************${NC}"
+echo " "
+
+# Debug running script as user
+echo -e "${YELLOW}Script is running as user: $(whoami)${NC}"
+echo ""
+echo -e "${BLUE}*******************************************${NC}"
+echo " "
+
+echo -e "${YELLOW}Get latest server build ID from steam & installed server build ID.${NC}"
+echo " "
+# Get the latest build ID from Steam
+LATEST_BUILD_ID=$($STEAMCMD_PATH +login anonymous +app_info_print "$DAYZ_SERVER_APP_ID" +quit | grep '"buildid"' | head -n 1 | awk '{print $2}' | tr -d '"')
+
+# Get the installed build ID
+INSTALLED_BUILD_ID=$(grep -Po '"buildid"\s+"\K[0-9]+' "$SERVER_DIR/steamapps/appmanifest_$DAYZ_SERVER_APP_ID.acf")
+
+echo "Check if both build IDs exist."
+# Check if both build IDs exist
+if [ -z "$LATEST_BUILD_ID" ]; then
+    echo "Error: Could not retrieve latest build ID from Steam."
+    exit 1
+fi
+
+if [ -z "$INSTALLED_BUILD_ID" ]; then
+    echo "Installed build ID not found. Assuming update is needed."
+    NEEDS_UPDATE=1
+else
+    echo "Installed: $INSTALLED_BUILD_ID | Latest: $LATEST_BUILD_ID"
+    if [ "$LATEST_BUILD_ID" != "$INSTALLED_BUILD_ID" ]; then
+        NEEDS_UPDATE=1
+    else
+        NEEDS_UPDATE=0
+    fi
+fi
+
+# If an update is needed, perform the update
+if [ "$NEEDS_UPDATE" -eq 1 ]; then
+    echo "Update available! Updating server."
+    $STEAMCMD_PATH +force_install_dir "$DAYZ_SERVER_PATH" +login anonymous +app_update "$DAYZ_SERVER_APP_ID" validate +quit
+    echo "Update complete."
+else
+    echo "No update needed."
+fi
+
+echo ""
+echo -e "${BLUE}*******************************************${NC}"
+echo " "
+
+echo -e "${YELLOW}Generate SteamCMD script for mod updates.${NC}"
+echo ""
 # Ensure the modlist file exists
+echo "Checking modlist.txt exists."
 if [ ! -f "$MODLIST_FILE" ]; then
     echo "Error: modlist.txt not found!"
     exit 1
 fi
+echo "Found modlist.txt."
 
-#echo "Updating DayZ server..."
-#$STEAMCMD_PATH +force_install_dir "$SERVER_DIR" +login "$STEAM_USERNAME" +app_update "$DAYZ_SERVER_APP_ID" validate +quit
-
-echo "Generating SteamCMD script for mod updates..."
+echo "Generating SteamCMD script for mod updates."
 STEAMCMD_SCRIPT="$SERVER_DIR/update_mods.txt"
-echo "login $STEAM_USERNAME" > "$STEAMCMD_SCRIPT"
 echo "force_install_dir $SERVER_DIR" >> "$STEAMCMD_SCRIPT"
+echo "login $STEAM_USERNAME" > "$STEAMCMD_SCRIPT"
 
 MODS=""
 
 # Read modlist and add each mod to the SteamCMD script
+echo "Read modlist.txt and add each mod to the SteamCMD script"
+
 while IFS= read -r MOD_ID || [[ -n "$MOD_ID" ]]; do
     MOD_ID=$(echo "$MOD_ID" | tr -d '\r')  # Remove any Windows-style CR characters
     if [[ -z "$MOD_ID" || "$MOD_ID" =~ ^# ]]; then
@@ -48,14 +106,26 @@ done < "$MODLIST_FILE"
 
 echo "quit" >> "$STEAMCMD_SCRIPT"
 
-# Debug: Show what is being passed to SteamCMD
-echo "SteamCMD script content:"
+echo " "
+
+# Show what is being passed to SteamCMD
+echo -e "${YELLOW}SteamCMD script content:${NC}"
+echo " "
 cat "$STEAMCMD_SCRIPT"
 
-# Run SteamCMD once to install/update all mods
-$STEAMCMD_PATH +runscript "$STEAMCMD_SCRIPT"
+echo " "
+echo -e "${BLUE}*******************************************${NC}"
+echo " "
 
-echo "Processing downloaded mods..."
+# Run SteamCMD once to install/update all mods
+echo -e "${YELLOW}Run steamcmd once to install/update all mods.${NC}"
+echo " "
+$STEAMCMD_PATH +runscript "$STEAMCMD_SCRIPT"
+echo " "
+echo -e "${BLUE}*******************************************${NC}"
+echo " "
+echo -e "${YELLOW}Processing downloaded mods.${NC}"
+echo " "
 # Loop through mod list
 while IFS= read -r MOD_ID || [[ -n "$MOD_ID" ]]; do
     MOD_ID=$(echo "$MOD_ID" | tr -d '\r')  # Remove any Windows-style CR characters
@@ -107,10 +177,15 @@ done < "$MODLIST_FILE"
 # Remove leading semicolon
 MODS="${MODS:1}"
 
-echo "Starting DayZ Server..."
+echo " "
+echo -e "${BLUE}*******************************************${NC}"
+echo " "
+echo -e "${YELLOW}Starting DayZ Server.${NC}"
+echo " "
 cd "$SERVER_DIR" || exit
 
-echo "$SERVER_EXECUTABLE" "-config=$CONFIG_FILE" "-port=$GAME_PORT" "-mod=$MODS" "-BEpath=$BATTLEYE_PATH" "-profiles=$PROFILES_PATH" -dologs -adminlog -netlog -freezecheck
+echo "Command: $SERVER_EXECUTABLE -config=$CONFIG_FILE -port=$GAME_PORT -mod=$MODS -BEpath=$BATTLEYE_PATH -profiles=$PROFILES_PATH -dologs -adminlog -netlog -freezecheck"
+echo " "
 
 # Run the DayZ server with the correct mods
 "$SERVER_EXECUTABLE" "-config=$CONFIG_FILE" "-port=$GAME_PORT" "-mod=$MODS" "-BEpath=$BATTLEYE_PATH" "-profiles=$PROFILES_PATH" -dologs -adminlog -netlog -freezecheck
